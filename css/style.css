@@ -1,0 +1,776 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    --main-color:#283526;
+    --primry-color: #888888;
+    --button-background: #4b709e;
+    --primary-button-background: #fe7649;
+    --background-color: #e9f3ff;
+    overflow-x: hidden;
+}
+h1,h2{
+    /* font-family: ; */
+    color: var(--main-color);
+}
+
+h4,h3{
+    color: var(--main-color);
+    /* font-family: ; */
+}
+
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+p,a,li,button{
+    /* font-family: ; */
+    color: var(--primry-color);
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+
+}
+
+/*----------------------------------------------- our menu style--------------------------------------------- */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+header nav .left-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    /* background-color: blue;*/
+}  
+
+header nav .left-side a img{
+    width: 100px;
+    height: 45px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+header nav .left-side .sub-menu{
+    height: inherit;
+    display: flex;
+}
+
+header nav .left-side .sub-menu a{
+    margin-right: 4rem;
+}
+header nav .left-side .sub-menu a li{
+    font-size: 2rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all 0.2s;
+
+}
+header nav .left-side .sub-menu a li:hover{
+    color: var(--button-background);
+}
+
+/*--------------------------------- right side menu ---------------------------------*/
+header .right-side{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+}
+
+header .right-side .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 9;
+}
+header .right-side .sub-menu a{
+    margin-right: 80px;
+    padding: 0.7rem 2rem;
+    background-color: rgba(red, green, blue, alpha);
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+header .right-side .sub-menu button{
+    padding: 0.5rem 2.5rem;
+    background-color: var(--button-background);
+    color: #fff;
+}
+
+header .right-side .sub-menu button:hover{
+    background-color: rgb(21, 38, 88);
+}
+
+header .right-side .sub-menu a li:hover{
+    color: var(--button-background);
+}
+
+/* ------------------------------------our hero section------------------------------------- */
+.main-hero-section{
+    padding: 0 10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+.main-hero-section .hero-left-side{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.main-hero-section h1{
+    width: 55rem;
+    font-size: 7.0rem;
+    line-height: 9rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+}
+.main-hero-section p{
+    margin-bottom: 8rem;
+    width: 45rem;
+}
+.main-hero-section a img{
+    width: 13.5rem;
+    height: 4.3rem;
+}
+/* .main-hero-section .button-group .appstore{
+    height: 4rem;
+    margin-bottom: 0.4rem;} */
+   
+
+.main-hero-section .button-group a:first-child{
+    margin-right: 2.5rem;
+    padding-right: 25px;
+}
+
+/* --------------------------------------------right side style--------------------------------------- */
+.main-hero-section .hero-right-side{
+    width: 50%;
+    height: 100vh;
+    background: var(--background-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 20px 90px 20px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-hero-section .hero-right-side img{
+    /* width: 100rem;
+    height: 90rem; */
+     margin-right: 23rem; 
+}
+/* -----------------------------------------------------our second section--------------------------------------------------------- */
+.common-section{
+    width: 100%;
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9rem;
+    padding: 0 10rem;
+}
+.common-section .left-side{
+    width: inherit;
+    height: inherit;
+}
+.common-section .left-side figure{
+    width: 20rem;
+    height: 59rem;
+    background: #f3f9ff;
+    border-radius: 20px;
+
+}
+.common-section .left-side img{
+    width: 33rem;
+    height: 55rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem;
+}
+/* -------------------------------------------our second section right css---------------------------------- */
+.common-section .right-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.common-section .right-side h2{
+    width: 40rem;
+    font-style: normal;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    
+}
+
+.common-section .right-side p{
+    width: 40.3rem;
+    height: 9rem;
+    text-transform: lowercase;
+    margin-bottom: 3rem;
+}
+
+.common-section .right-side .common-button{
+    padding: 1rem 3rem;
+    background-color: var(--primary-button-background);
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.common-section .right-side button:last-child{
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.common-section .right-side .common-button:hover{
+    background: #c0390c;
+}
+.common-section .right-side .common-button-normal:hover{
+    background: var(--primary-button-background);
+    color: aliceblue;
+}
+/* ------------------------------------------------------our third section---------------------------------------------- */
+.section-third{
+    width: 100%;
+    height: 70rem;
+    background: var(--background-color);
+    padding: 3rem 20rem;
+}
+.section-third h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.section-third p{
+    width: 35rem;
+    height: 9rem;
+    margin-bottom: 2.6rem;
+    text-align: center;
+    margin: auto;
+}
+.section-third .section-third-task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+    grid-column-gap: 4rem;
+}
+.section-third .section-third-task .task1,
+.section-third .section-third-task .task2,
+.section-third .section-third-task .task3{
+    padding-top: 2rem;
+    /* background: rgb(124, 105, 29); */
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+}
+.section-third .section-third-task .task1 h3,
+.section-third .section-third-task .task2 h3,
+.section-third .section-third-task .task3 h3{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    margin-top: 1.8rem;
+} 
+.section-third .section-third-task .task1 img,
+.section-third .section-third-task .task2 img,
+.section-third .section-third-task .task3 img{  
+    width: 16rem;
+    height: 16rem;
+    transition: all 0.3s;
+}
+.section-third .section-third-task .task3{    
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem  rgba(35, 52, 53, 0.25); 
+}
+.section-third .section-third-task .task1:hover,
+.section-third .section-third-task .task2:hover{
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem  rgba(35, 52, 53, 0.25);
+
+}    
+.section-third .section-third-task .task1:hover > img,
+.section-third .section-third-task .task2:hover > img,
+.section-third .section-third-task .task3:hover > img{
+    transform:rotate(360deg);
+}
+/* --------------------------------------------------section four------------------------------------------- */
+#section-four .left-side img{
+   /* width: inherit;
+   height: inherit; */
+   margin: 0;
+}
+/* --------------------------------------------------section five------------------------------------------- */
+#section-five .left-side img{
+    margin-left: 0;
+}
+#section-five .right-side{
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+#section-five .right-side h2{
+    width: 55rem;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 5rem;
+}
+#section-five .right-side h3{
+    text-transform: none;
+}
+#section-five .right-side p{
+    height: 2.5rem;
+}
+#section-five .right-side div{
+    margin-bottom: 5rem;
+}
+
+.fa-heart{
+    color: #b94f2c;
+}
+
+/* ---------------------------------------------footer section--------------------------------------- */
+footer{
+    width: 100%;
+    background: var(--background-color);
+    height: auto;
+    padding: 4rem 18rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+footer img{
+    width: 130px;
+    height: 4rem;
+    background-color: black;
+}
+
+footer .footer-menu{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer div h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+footer div a{
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+footer .footer-div5 a{
+    font-size: 1.3rem;
+}
+/* --------------------------------------social media section ------------------------------*/
+.icon-bar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.icon-bar a{
+    width: 16rem;
+    background: #3b5999;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    transition: all 0.5s linear;
+    transform: translateX(-14rem);
+}
+
+.icon-bar a:hover{
+    transform: translateX(0);
+}
+.icon-bar a .fab{
+    padding-left: 0.8rem;
+    font-size: 2.5rem; 
+    animation: letszoom 3s linear alternate-reverse infinite;
+}
+@keyframes letszoom{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.icon-bar .facebook{
+    background: #00aced;
+}
+.icon-bar .instagram{
+    background: #e4405f;
+}
+.icon-bar .github{
+    background: lightgreen;
+}
+.icon-bar .telegram{
+    background:#08516b;
+}
+
+/* --------------------------------------------------------------
+responsive website layout-----------------------------------------
+------------------------------------------------------------------ */
+
+/* tablet */
+@media (max-width:980px){
+    header, .main-hero-section, .common-section {
+        padding: 0 8rem;
+    }
+    .main-hero-section .hero-right-side {
+        width: 100%;
+        position: relative;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-hero-section .hero-right-side img{
+        width: 25rem;
+        height: 25rem;
+        margin-right: -20px;
+        margin-top: 5rem;
+
+    }
+    .main-hero-section .hero-left-side{
+        width: 45%;
+    }
+    .main-hero-section h1{
+        width: 45rem;
+        font-size: 5rem;
+        line-height: 7rem;
+        margin-bottom: 5rem;
+        text-transform: capitalize;
+    }
+    .main-hero-section p{
+        margin-bottom: 6rem;
+        width: 35rem;
+    }
+    .main-hero-section .button-group a{
+       margin-bottom: 0px;
+    }
+    .common-section{
+        width: 100%;
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 9rem;
+        padding: 0 10rem;
+    }
+    .common-section .left-side{
+        width: inherit;
+        height: inherit;
+        padding-right: 25rem;
+    }
+    .common-section .left-side figure{
+        width: 10rem;
+        height: 30rem;
+        background: transparent;
+        border-radius: 20px;
+        
+    
+    }
+    .common-section .left-side img{
+        width: 16rem;
+        height: 27rem;
+        border-radius: 2rem;
+        margin-left: 8rem;
+        margin-top: 2rem;
+    }
+
+    .common-section .right-side{
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        
+    }
+    
+    .common-section .right-side h2{
+        width: 25rem;
+        font-style: normal;
+        font-size: 4rem;
+        font-weight: bold;
+        line-height: 5rem;
+        margin-bottom: 3rem;
+        text-transform: capitalize;
+       
+        
+    }
+    /* commonsection */
+    .common-section .right-side p{
+        width: 25.3rem;
+        height: 9rem;
+        text-transform: lowercase;
+        margin-bottom: 2rem;
+       
+    }
+    .common-section .right-side .common-button{
+        padding: 0.5rem 0.5rem;
+        background-color: var(--primary-button-background);
+        margin-right: 1rem;
+        color: #fff;
+    }
+    .common-section .right-side .button-group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 25rem;
+        
+    }
+    
+    .common-section .right-side button:last-child{
+        color: var(--main-color);
+        background-color: transparent;
+    }
+    
+    .common-section .right-side .common-button:hover{
+        background: #c0390c;
+    }
+    .common-section .right-side .common-button-normal:hover{
+        background: var(--primary-button-background);
+        color: aliceblue;
+    }
+    /* thirdsection */
+    .section-third{
+        width: 100%;
+        height: 140rem;
+        background: var(--background-color);
+        padding: 3rem 20rem;
+        
+    }
+    .section-third h2{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+    .section-third p{
+        width: 35rem;
+        height: 9rem;
+        margin-bottom: 2.6rem;
+        text-align: center;
+        margin: auto;
+    }
+    .section-third .section-third-task{
+         width: 100%; 
+        display: inline;
+        /* grid-template-columns: 0.5fr 0.5fr 0.5fr; */
+        margin-top: 3rem;
+        grid-column-gap: 2rem;
+    }
+   
+    #section-five{
+        height: 60rem;
+    }
+    
+}
+
+
+/* mobile */
+@media (max-width:770px) {
+    header, .main-hero-section, .common-section {
+        padding: 0 5rem;
+    }
+    header nav{
+        padding-top: 1rem;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    header nav .left-side{
+        width: 100%;
+        display: block;
+        order: 2;
+    }
+    header nav .left-side img{
+        display: block;
+        width: 100%;
+    }
+    header .left-side .sub-menu{
+        width: 100%;
+        display: block;
+
+    }
+    header nav .left-side .sub-menu a{
+        margin-right: 2rem;
+    }
+    header nav .left-side .sub-menu a li{
+        font-size: 1.7rem;
+    }
+
+    header nav .right-side{
+        width: 100%;
+        order: 1;
+    }
+    header nav .right-side .sub-menu a{
+        width: 10rem;
+        height: 3.5rem;
+        border: 0.1rem solid var(--main-color);
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    header nav .right-side .sub-menu a li{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        
+    }
+    header nav .right-side .sub-menu button{
+        width: 13rem;
+        font-size: 1.5rem;
+    }
+    
+
+
+    /* hero section css style */
+    .main-hero-section{
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        flex-flow: column;
+
+    }
+    .main-hero-section .hero-left-side{
+        order: 2;
+        width: 100%;
+    }
+    .main-hero-section .hero-left-side h1{
+        font-size: 5rem;
+        width: 35rem;
+        line-height: 6rem;
+        margin-bottom: 20px;
+    }
+    .main-hero-section .hero-left-side p{
+        font-size: 2rem;
+        width: 35rem;
+        margin-bottom: 30px;
+    }
+    .main-hero-section .hero-right-side{
+        order: 1;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: transparent;
+    }
+    .main-hero-section .hero-right-side img{
+        width: 30rem;
+        height: 30rem;
+        margin: 0;
+        margin-top: 4rem;
+
+    }
+    /* #section-four{
+        display: inline;
+    } */
+    
+    #section-third{
+        
+        height: 280vh;
+        background: transparent;
+    }
+    #section-third h2{
+        width: 200px;
+    }
+    #section-four .left-side img{
+        margin-left: 10rem;
+        margin-top: 20px;
+    }
+    #section-five{
+        display: inline;
+        height: 110vh;
+    }
+    #section-five .left-side img{
+        margin-left: 35rem;
+       
+    }
+    #sectin-five .right-side{
+        justify-content: center;
+        margin-top: -10rem;
+        width: 100%;
+    }
+    #sectin-five .right-side #h2{
+        width: 50%;
+        font-size: 20px;
+    }
+    
+    footer{
+        margin-top: 30rem;
+        display: inline;
+        background: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
