@@ -351,7 +351,7 @@ header .right-side .sub-menu a li:hover{
     transform:rotate(360deg);
 }
 /* --------------------------------------------------section four------------------------------------------- */
-#section-four .left-side img{
+ #section-four .left-side img{
    /* width: inherit;
    height: inherit; */
    margin: 0;
@@ -740,7 +740,7 @@ responsive website layout-----------------------------------------
     }
     #section-five{
         display: inline;
-        height: 110vh;
+        height: 90vh;
     }
     #section-five .left-side img{
         margin-left: 35rem;
@@ -760,8 +760,28 @@ responsive website layout-----------------------------------------
         margin-top: 30rem;
         display: inline;
         background: transparent;
+        height: 200px;
     }
-}
+    @media(max-width:550px){
+        #section-five{
+            width: 110vh;
+            display: inline;
+            /* text-align: end; */
+            
+    
+        }
+        #h2{
+            text-align: centre;
+            margin-top: -100px;
+        }
+        .section-third p{
+            width: 25rem;
+            height: 9rem;
+            margin-bottom: 2.6rem;
+            text-align: start;
+            /* margin: 20px; */
+        }
+} 
 
 
 
