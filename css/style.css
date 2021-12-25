@@ -762,6 +762,7 @@ responsive website layout-----------------------------------------
         background: transparent;
         height: 200px;
     }
+}
     @media(max-width:550px){
         #section-five{
             width: 110vh;
@@ -782,15 +783,3 @@ responsive website layout-----------------------------------------
             /* margin: 20px; */
         }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
