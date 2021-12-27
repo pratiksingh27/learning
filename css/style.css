@@ -637,13 +637,14 @@ responsive website layout-----------------------------------------
         height: 140rem;
         background: var(--background-color);
         padding: 3rem 20rem;
+        margin-left: 150px;
         
     }
     .section-third h2{
         font-size: 3rem;
         margin-bottom: 1rem;
         margin-top: 2.5rem;
-        text-align: center;
+        text-align: end;
     }
     .section-third p{
         width: 35rem;
@@ -662,6 +663,8 @@ responsive website layout-----------------------------------------
    
     #section-five{
         height: 60rem;
+        display: flex;
+       flex-direction: row;
     }
     
 }
@@ -769,20 +772,20 @@ responsive website layout-----------------------------------------
     } */
     
     #section-third{
-        
         height: 280vh;
         background: transparent;
     }
     #section-third h2{
-        width: 200px;
+        width: 100%;       
     }
     #section-four .left-side img{
         margin-left: 10rem;
         margin-top: 20px;
     }
     #section-five{
-        display: inline;
-        height: 90vh;
+       display: flex;
+       flex-direction: column;
+       height: 100vh;   
     }
     #section-five .left-side img{
         margin-left: 35rem;
@@ -794,8 +797,11 @@ responsive website layout-----------------------------------------
         width: 100%;
     }
     #sectin-five .right-side #h2{
-        width: 50%;
+        width: 100%;
         font-size: 20px;
+        display: inline;
+        justify-content: start;
+        align-items: center;
     }
     
     footer{
@@ -806,22 +812,29 @@ responsive website layout-----------------------------------------
     }
 }
     @media(max-width:550px){
-        #section-five{
-            width: 110vh;
-            display: inline;
-            /* text-align: end; */
-            
-    
-        }
+        
         #h2{
-            text-align: centre;
+            text-align: center;
             margin-top: -100px;
         }
-        .section-third p{
-            width: 25rem;
-            height: 9rem;
+        #section-third h2{
+            width: 100%;
+        }
+        
+        #section-third p{
+            width: 28rem;
+            height: 10rem;
             margin-bottom: 2.6rem;
-            text-align: start;
+            margin-left: 20px;
+            text-align: end;
             /* margin: 20px; */
+        }
+        #section-five{
+            width: 110vh;
+            /* display: inline; */
+            /* text-align: end;  */
+        }
+        #section-five h2 p{
+            margin-left: 250px;
         }
 } 
